@@ -1,6 +1,7 @@
 var secretNumber;
 var guessedNumbers = [];
 var mesBox = document.querySelector("#messageBox");
+const guessField = document.querySelector(".guessField");
 function start()
 {
     secretNumber = Math.floor(Math.random() * 100) +1;
@@ -8,7 +9,7 @@ function start()
 
 function guessButtonPressed()
 {
-    var guess = parseInt(document.querySelector(".guessField").value);
+    var userGuess = Number(guessField.value);
 }
 
 function isValidGuess(numero)
