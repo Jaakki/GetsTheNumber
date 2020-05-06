@@ -1,14 +1,14 @@
-var secretNumber = start();
+var secretNumber;
 var guessedNumbers = [];
-
+var mesBox = document.querySelector("#messageBox");
 function start()
 {
-    Math.floor(Math.random() * 101) +1;
+    secretNumber = Math.floor(Math.random() * 100) +1;
 }
 
 function guessButtonPressed()
 {
-    var guess = parseInt(document.querySelector("#Guess").value);
+    var guess = parseInt(document.querySelector(".guessField").value);
 }
 
 function isValidGuess(numero)
